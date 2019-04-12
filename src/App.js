@@ -11,13 +11,22 @@ class App extends Component {
     }
 
     render() {
+        return (
+            <div className="rankings-app">
+                <main className="rankings-content">
+                    {this.getContent()}
+                </main>
+                <footer>A quick test from Jonathan Stevens: enterprise standard javascript developer and all round good guy. Very hireable.</footer>
+            </div>
+        )
+    }
+
+    getContent() {
         if (this.state.league && this.state.league.rounds) {
             return (
-                <div className="rankings-app">
-                    <div className="rankings-content">
-                        <Title>{this.state.league.name}</Title>
-                        <LeagueTable rankings={this.getRankings(this.state.league.rounds)} />
-                    </div>
+                <div>
+                    <Title>{this.state.league.name}</Title>
+                    <LeagueTable rankings={this.getRankings(this.state.league.rounds)} />
                 </div>
             )
         }

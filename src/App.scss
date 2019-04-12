@@ -13,12 +13,24 @@ body {
 .rankings-app {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding-bottom: 30%;
 }
 
 .rankings-content {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 100px;
+    flex: 1;
+    justify-content: center;
+}
+
+footer {
+    flex-basis: 30px;
+    text-align: center;
+    background-color: #a00;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
 }
 
 h1 {
