@@ -11,12 +11,12 @@ class App extends Component {
 
     render() {
         return (
-            <div className="rankings-app">
+            <>
                 <main className="rankings-content">
                     {this.getContent()}
                 </main>
                 <footer>A quick test from Jonathan Stevens: enterprise standard javascript developer and all round good guy. Very hireable.</footer>
-            </div>
+            </>
         )
     }
 
