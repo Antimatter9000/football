@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-export default class Title extends Component {
-    render() {
-        return (
-            <h1 tabIndex="0">{this.props.children}</h1>
-        );
-    }
+const Title = ({ children }) => (
+    <h1 tabIndex="0">{children}</h1>
+)
+
+Title.propTypes  = {
+    children: PropTypes.string
 }
+
+export default Title;

@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default ({ rankings }) => {
+const LeagueTable = ({ rankings }) => {
     const displayRankings = () => {
         if (rankings) {
             return rankings.map((ranking, i) => (
@@ -43,3 +44,20 @@ export default ({ rankings }) => {
         </table>
     );
 }
+
+LeagueTable.propTypes = {
+    rankings: PropTypes.arrayOf(
+        PropTypes.shape({
+            teamName: PropTypes.string,
+            wins: PropTypes.number,
+            draws: PropTypes.number,
+            defeats: PropTypes.number,
+            goalsFor: PropTypes.number,
+            goalsAgainst: PropTypes.number,
+            goalDiff: PropTypes.number,
+            points: PropTypes.number,
+        })
+    )
+}
+
+export default LeagueTable;
