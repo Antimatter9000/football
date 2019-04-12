@@ -6,7 +6,7 @@ export default ({ rankings }) => {
             return rankings.map((ranking, i) => (
                 <tr
                   key={`ranking-${i}`}
-                  tabindex="0">
+                  tabIndex="0">
                     <td>{i + 1}</td>
                     <td>{ranking.teamName}</td>
                     <td>{ranking.wins}</td>
@@ -25,7 +25,7 @@ export default ({ rankings }) => {
     return (
         <table className="league-table">
             <thead>
-                <tr tabindex="0">
+                <tr tabIndex="0">
                     <th>Rank</th>
                     <th>Team name</th>
                     <th>Total wins</th>
