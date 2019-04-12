@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Title from './components/Title';
 import LeagueTable from './components/LeagueTable';
 import ErrorMessage from './components/ErrorMessage';
-import logo from './logo.svg';
 import './App.scss';
 
 class App extends Component {
