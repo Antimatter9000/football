@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ErrorMessage = ({ message }) => (
-    <div>
+    <div className="error">
         <h1>No job for this guy!</h1>
         <p>{message}</p>
     </div>

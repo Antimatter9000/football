@@ -145,7 +145,7 @@ class App extends Component {
             this.setState({league});
         } catch(e) {
             this.setState({
-                error: `Damn, knew I shouldn't have tried to be so clever. Honestly, this worked locally I promise 😬`
+                error: `Damn, knew I shouldn't have tried to be so clever. Honestly, this worked on my machine I promise 😬`
             })
         }
     }
